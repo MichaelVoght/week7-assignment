@@ -1,0 +1,42 @@
+Marvel Strike Force Team Builder
+
+The Marvel Strike Force Team Builder App will help players build, optimize, and understand what their custom team will be able to accomplish
+in game. The user will be presented with a roster of selectable characters that are in game. Their team will be displayed below the Roster section
+to allow them to make changes to their team freely. As the team is being built, below the team section will be a list of the characters in game
+abilities (Basic, Special, Ultimate, and Passive). This will allow players to build an optimized custom team for events and game modes while
+seeing what their abilities do all in one spot.
+
+Wireframe:
+    [MSF_Team_Builder_WireFrame.drawio]
+
+Dependencies:
+    Marvel Strike Force API - https://developer.marvelstrikeforce.com/beta/index.html
+    React Bootstrap - https://react-bootstrap.github.io/
+    Prettier - https://prettier.io/
+    Cypress - https://docs.cypress.io/guides/overview/why-cypress
+    Firebase - https://firebase.google.com/
+
+Todo List:
+    Setup `create-react-app` scaffold
+    Register App with Firebase
+    Build Roster Component
+        Call Marvel Strike Force API
+        Display Portrait of Characters
+        Update React Component State
+            Selecting a Character in Roster
+                If in Team, remove from State.
+                If not in Team and Team State length is less than 5
+                    Add to Team
+    Build Team Component
+        Create container to Display React Component State
+        Selecting Character in Team Component removes from State
+    Build Team Information Component
+        Call Marvel Strike Force API for each character in State
+        Display Abilities (Basic, Special, Ultimate and Passive) for each character in State
+    Write Unit Tests for each Component/File and ensure they pass
+    Deploy App to Public
+    
+Plan:
+Week 1: Setup App and Register App with Firebase. Begin Working on Roster Component.
+Week 2: Begin and finish all Components including Unit Tests.
+Week 3: Add/Update Styling to Polish app and fix any bugs. Deploy App.
